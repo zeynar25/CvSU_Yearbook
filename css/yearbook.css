@@ -76,7 +76,7 @@ body{
 	padding: 0 20px 20px 20px;
 	width: 100%;
 	color: var(--gray);
-	margin-top: 100px;
+	margin-top: 140px;
 }
 
 .title{
@@ -186,4 +186,16 @@ body{
 
 .profile--female .profile__container{
 	background-color: red;
+}
+
+@media (min-width: 500px){
+	.container{
+		margin-top: 100px;
+	}
+}
+
+@media (min-width: 900px){
+	.header .title{
+		font-size: 2rem;
+	}
 }
