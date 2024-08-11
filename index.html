@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CvSU Yearbooks</title>
+    <script src="https://kit.fontawesome.com/cc67580265.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main-style.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__logo" href="./index.html">
+            <i class="fa-solid fa-r"></i><i class="fa-solid fa-r"></i>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li class="navbar__items"><a href="#log">Log in</a></li>
+                <li class="navbar__items"><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="landing" class="section">
+        <h1 class="landing__greeting">Cavite State University Yearbook</h1>
+    </section>
+        <section id="log" class="section">
+            <div class="main-container">
+                <div class="container">
+                    <div>
+                        <h1>Welcome Back!</h1>
+                    </div>
+
+                    <div>
+                        <p>Do you want to look at the latest yearbooks?</p>
+                    </div>
+
+                    <div>
+                        <button id="sign">Don't have an account?</button>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div>
+                        <h1>Hello, Friend!</h1>
+                    </div>
+
+                    <div>
+                        <p>Join us here at CvSU yearbooks.</p>
+                    </div>
+
+                    <div>
+                        <button id="log">Already have an account</button>
+                    </div>
+                </div>
+
+                <div class="container" id="form">
+                    <div>
+                        <h1 id="greet">Log in</h1>
+                    </div>
+
+                    <div>
+                        <form id="login-form">
+                            <input type="number" name="id" id="id" placeholder="ID" autocomplete="off">
+                            <p id="id-error" class="error"></p>
+
+                            <input type="password" name="password" id="password" placeholder="Password">
+                            <p id="password-error" class="error"></p>
+
+                            <input type="password" name="re-password" id="re-password" placeholder="Re-enter Password">
+                            <p id="re-password-error" class="error"></p>
+
+                            <button type="submit" id="submit-btn">login</button>
+
+                            <a href="#" id="forgot">forgot your password? </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="about">
+            <ul class="links__link">
+                <li>
+                    <a id="profile-link" target="_blank" href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+                </li>
+                <li>
+                    <a class="profile-link" target="_blank" href="https://www.facebook.com/zeynar25"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="./js/landing-animation.js"></script>
+    <script src="./js/landing-input.js"></script>
+</body>
+
+</html>

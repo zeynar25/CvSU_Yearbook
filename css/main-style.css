@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray: #E7F0DC;
+    --prim: #597445;
+    --sec: #658147;
+    --ter: #729762;
+    --dim-black: rgba(0, 0, 0, .4);
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(var(--dim-black), var(--dim-black)), url("../img/CvSU-background.jpg")center/ cover no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-image: linear-gradient(to right, var(--prim), var(--sec));
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: var(--gray);
+
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background: linear-gradient(to right, var(--prim), var(--sec));
+}
+
+.header__logo{
+    display: flex;
+    gap: 5px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.header a{
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar__items{
+    cursor: pointer;
+    min-width: fit-content;
+}
+
+/* make a header for mobile: 600px */

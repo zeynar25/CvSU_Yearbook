@@ -1,0 +1,189 @@
+.main-container {
+    flex-direction: column;
+    padding: 20px;
+	margin: 20px;
+}
+
+.box {
+    max-width: 450px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box .label {
+    cursor: pointer;
+    background: var(--ter);
+    padding: 10px;
+    color: black;
+    font-weight: 800;
+    transition: all 300ms ease-in;
+}
+
+.box .label:hover {
+    background: var(--prim);
+    color: var(--gray);
+}
+
+.box .content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 500ms ease-out;
+    background: #c5dda4;
+    padding: 0 5px;
+}
+
+.box .content>.classes {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.active .label{
+	color: white;
+    background: var(--prim);
+}
+
+.active .content {
+    grid-template-rows: 1fr;
+    padding: 5px;
+}
+
+.box .content>.classes div {
+    background-color: var(--ter);
+    color: black;
+    font-weight: 600;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+
+.box .content>.classes div:hover {
+    background-color: var(--prim);
+    color: var(--gray);
+}
+
+
+/* below this is for the yearbook profiles*/
+body{
+	display: flex; 
+	flex-direction: column;
+}
+
+.container{
+	padding: 0 20px 20px 20px;
+	width: 100%;
+	color: var(--gray);
+	margin-top: 100px;
+}
+
+.title{
+	padding: 0px 50px;
+}
+
+.title, .profile__title, .profile__name{
+	text-align: center;
+}
+
+.profile{
+	position: relative;
+}
+
+.profile__title h1{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: -13px;
+}
+
+.profile__section{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: 1fr;
+	grid-auto-flow: row;
+	padding: 50px 20px 100px 20px;
+	gap: 20px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.profile__container{
+	background-color: black;
+	border-radius: 10px;
+	overflow: hidden;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.profile__picture{
+	position: relative;
+}
+
+.profile__picture img{
+	width: 100%;
+}
+
+.profile__name{
+	padding: 5px 10px;
+}
+
+.picture__hidden{
+    background-color: var(--dim-black);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+
+	padding: 20px;
+	list-style-type: none;
+	opacity: 0;
+	cursor: pointer;
+	transition: opacity 250ms ease-in;
+}
+
+.hidden__label, .hidden__value{
+	display: grid;
+	gap: 5px;
+}
+
+.hidden__label{
+	font-weight: 700;
+}
+
+
+.hidden__label li:after{
+	content: ":";
+}
+
+.picture__hidden:hover{
+	opacity: 1;
+}
+
+.profile__title{
+	border-top: solid 5px black;
+}
+
+.profile--male .profile__title{
+	border-top: solid 5px blue;
+}
+
+.profile--female .title--gender{
+	border-top: solid 5px red;
+}
+
+.profile--male .profile__container{
+	background-color: blue;
+}
+
+.profile--female .profile__container{
+	background-color: red;
+}

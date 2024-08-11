@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <script src="https://kit.fontawesome.com/cc67580265.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main-style.css">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__logo" href="./index.html">
+            <i class="fa-solid fa-r"></i><i class="fa-solid fa-r"></i>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li class="navbar__items"><a href="./index.html">Log out</a></li>
+                <li class="navbar__items"><a href="./index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <header class="container__header">
+            <h1 class="header__title">admin</h1>
+            <ul class="modes">
+                <li class="mode active">Students</li>
+                <li class="mode">Instructors</li>
+                <li class="mode">Classes</li>
+                <li class="mode">Courses</li>
+            </ul>
+        </header>
+        <main class="container__main">
+            <div class="main__filter">
+                <select name="year" id="year">
+                    <option>all</option>
+                    <option>N/A</option>
+                    <option>2024</option>
+                    <option>2023</option>
+                </select>
+                <select name="course" id="course">
+                    <option>all</option>
+                    <option>N/A</option>
+                    <option>BSCS</option>
+                    <option>BSIT</option>
+                </select>
+            </div>
+            <div class="main__items">
+                <div class="main__item">2023 - BSCS - Nate, Ryan Renz Gabriel L.</div>
+                <div class="main__item">2023 - BSCS - Nate, Ryan Renz Gabriel L.</div>
+                <div class="main__item">2023 - BSCS - Nate, Ryan Renz Gabriel L.</div>
+                <div class="main__item">2024 - BSCS - Nate, Ryan Renz Gabriel L.</div>
+                <div class="main__item">2024 - BSCS - Nate, Ryan Renz Gabriel L.</div>
+                <div class="main__item">2024 - BSCS - Nate, Ryan Renz Gabriel L.</div>
+                <div class="main__item">2024 - BSCS - Nate, Ryan Renz Gabriel L.</div>
+                <div class="main__item">2024 - BSCS - Nate, Ryan Renz Gabriel L.</div>
+                <div class="main__item">2024 - BSCS - Nate, Ryan Renz Gabriel L.</div>
+                <div class="main__item">2024 - BSCS - Nate, Ryan Renz Gabriel L.</div>
+            </div>
+        </main>
+    </div>
+    <script src="./js/admin.js"></script>
+</body>
+
+</html>
